@@ -1,12 +1,12 @@
-### Vivek M. Badiani's Portfolio Site
+# Vivek M. Badiani's Portfolio Site
 
 ## Section 1 - Header
 
-# Top left corner - photo icon of me with linkedin, google scholar, github links
+### Top left corner - photo icon of me with linkedin, google scholar, github links
 
-# Middle - Name
+### Middle - Name
 
-# Top right corner - Navigation bar [Education, Skills, Projects, Work experience, Papers, Contact me]
+### Top right corner - Navigation bar [Education, Skills, Projects, Work experience, Papers, Contact me]
 
 ## Section 2 - About Me
 
