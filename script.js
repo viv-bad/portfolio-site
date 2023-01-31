@@ -1,9 +1,8 @@
+// Select accordian drop-down icon
+
 const icons = document.querySelectorAll(".accordian-icon");
 
-// icons.addEventListener("click", function (e) {
-//   console.log("click");
-// });
-
+// loop through all icons and add event listener to toggle opening and closing
 for (let icon of icons) {
   const item = icon.parentElement;
 
@@ -12,19 +11,24 @@ for (let icon of icons) {
   });
 }
 
+// Query selectors for each section in the HTML present in the navbar
 const papersSection = document.querySelector(".section-papers");
 const aboutMeSection = document.querySelector(".section-about-me");
 const educationSection = document.querySelector(".section-education");
 const skillsSection = document.querySelector(".section-skills");
 const projectsSection = document.querySelector(".section-projects");
+const contactSection = document.querySelector(".contact");
 
 const navPapers = document.querySelector("#papers");
 const navAboutMe = document.querySelector("#about-me");
 const navEducation = document.querySelector("#education");
 const navSkills = document.querySelector("#skills");
 const navProjects = document.querySelector("#projects");
+const navContactMe = document.querySelector("#contact-me");
 
 const learnMoreButton = document.querySelector(".btn-learn-more");
+
+// Event listeners added for each section in the HTML, whereupon clicking on the navbar, we scroll to the section
 
 learnMoreButton.addEventListener("click", function () {
   const yOffset = -190;
@@ -73,12 +77,22 @@ navProjects.addEventListener("click", function () {
   // projectsSection.scrollIntoView({ behavior: "smooth" });
 });
 
+navContactMe.addEventListener("click", function () {
+  const yOffset = -190;
+  const y =
+    contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({ top: y, behavior: "smooth" });
+  // projectsSection.scrollIntoView({ behavior: "smooth" });
+});
+
+// query selector for the sticky navbar
 const navBar = document.querySelector(".nav");
 
 const navHeight = navBar.getBoundingClientRect().height;
 // console.log(navHeight);
 const header = document.querySelector("header");
 
+// function for making the navbar sticky relative to when we scroll past the navbar until it is out of sight (which then toggles sticky in CSS)
 const stickyNav = function (entries) {
   const [entry] = entries;
   // console.log(entry);
@@ -110,10 +124,6 @@ let curSlide = 0;
 
 const maxSlide = papers.length;
 
-// papers.forEach((p, i) => {
-//   p.style.transform = `translateX(${100 * i}%)`;
-// });
-
 /////////////// Functions /////////////////////
 
 const createDots = function () {
@@ -124,7 +134,6 @@ const createDots = function () {
     );
   });
 };
-// createDots();
 
 const activateDot = function (slide) {
   document
@@ -135,7 +144,6 @@ const activateDot = function (slide) {
     .querySelector(`.dots__dot[data-slide="${slide}"]`)
     .classList.add("dots__dot--active");
 };
-// activateDot(curSlide);
 
 const goToPaper = function (paper) {
   papers.forEach((p, i) => {
@@ -143,8 +151,6 @@ const goToPaper = function (paper) {
   });
   activateDot(curSlide);
 };
-
-// goToPaper(0);
 
 // next slide
 
@@ -156,7 +162,6 @@ const nextSlide = function () {
   }
 
   goToPaper(curSlide);
-  // activateDot(curSlide);
 };
 
 const prevSlide = function () {
@@ -167,7 +172,6 @@ const prevSlide = function () {
   }
 
   goToPaper(curSlide);
-  // activateDot(curSlide);
 };
 
 const init = function () {
@@ -194,8 +198,7 @@ document.addEventListener("keydown", function (e) {
 dotContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("dots__dot")) {
     curSlide = +e.target.dataset.slide;
-    // const { slide } = e.target.dataset;
+
     goToPaper(curSlide);
-    // activateDot(curSlide);
   }
 });

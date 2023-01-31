@@ -38,9 +38,7 @@ Add circles or boxes (like features section for app webpages) with icons/symbols
 
 Add your projects here as an accordion list (1. portfolio site, 2. NodeJS bookstore, 3. React dashboard for electrochemical experiments...)
 
-## Section 6 - Work experience
-
-## Section 7 - Papers
+## Section 6 - Papers
 
 do this like a testimonial section, with right and left buttons to slide through papers
 

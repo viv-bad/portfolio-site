@@ -72,18 +72,48 @@
             </li>
 
             <li>
-              <a href="#" class="header-nav-link">Work experience</a>
+              <a class="header-nav-link" id="papers">Published articles</a>
             </li>
 
             <li>
-              <a class="header-nav-link" id="papers">Published papers</a>
+              <a class="header-nav-link" href="/uploads/CV_Vivek Badiani_v4.pdf" target="_blank">Resume</a>
             </li>
 
             <li>
-              <a href="#" class="header-nav-link">Contact me</a>
+              <a class="header-nav-link" id="contact-me">Contact me</a>
             </li>
           </ul>
         </nav>
+      </div>
+
+      <div class="socials">
+        <ul class="social">
+          <li class="social-icon">
+            <a href="https://github.com/viv-bad" target="_blank">
+              <img src="/img/socials/github.svg" alt="github" />
+            </a>
+          </li>
+
+          <li class="social-icon">
+            <a href="https://www.linkedin.com/in/vivek-badiani/" target="_blank">
+              <img src="/img/socials/linkedin.svg" alt="linkedin" />
+            </a>
+          </li>
+
+          <li class="social-icon">
+            <a
+              href="https://scholar.google.com/citations?hl=en&user=86YrbyUAAAAJ&view_op=list_works" target="_blank"
+            >
+              <img src="/img/socials/google-scholar.svg" alt="scholar" />
+            </a>
+          </li>
+
+          <li class="social-icon">
+            <a href="https://www.ch.cam.ac.uk/person/vb375" target="_blank">
+              <img src="/img/socials/cambridge.svg" alt="cambridge" />
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -97,22 +127,28 @@
               I build things for the web.
             </h1>
             <p class="hero-description">
-              I am a PhD Chemist, Materials Engineer and a Fullstack Software
-              Engineer specializing in building software for the renewable
-              energy industry.
+              I am a fullstack software engineer with a PhD in Chemistry and Materials Science with experience across the pharmaceutical, chemical and renewable energy sectors.
             </p>
             <a href="#" class="btn-hero btn-learn-more"
               >Learn more &downarrow;</a
             >
-            <a href="#" class="btn-hero btn-contact-me"
+            <a
+            
+            class="btn-hero btn-download"
+            href="/uploads/CV_Vivek Badiani_v4.pdf" target="_blank"
+            >Download my resume
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn-download-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+            </svg>
+            
+            </a
+          >
+            <a
+              href="mailto: vivekbadiani@gmail.com"
+              class="btn-hero btn-contact-me"
               >Contact me &rightarrow;</a
             >
           </div>
-          <!-- <div class="hero-img-box">
-            <picture>
-              <img src="/img/education/cambridge.png" alt="" />
-            </picture>
-          </div> -->
         </div>
       </div>
       <section class="section-about-me">
@@ -124,17 +160,11 @@
               Cambridge, and two further Master's degrees in Engineering and
               Physics and Pure Chemistry. Having spent 8 years in a laboratory,
               specialising in renewable energy technology, I realise the
-              importance (and lack) of good software in the renewable energy
-              landscape. My first exposure to programming was to write scripts
-              to automate mt data processing and visualisation in Python, which
-              was key to my research progression. I have therefore made it a
-              priority of mine to bridge my practical, hands-on expertise in the
-              lab with software development, with the hopes of building highly
-              user-friendly, beautifully designed and data-driven software to
-              help aid the development of products in the renewable energy
-              industry. Since completing my PhD, I have completed various
-              courses and have built projects using various technologies which
-              you can find in my <a href="#">skills</a> section.
+              importance of useful, well-designed software in the current world. My first exposure to programming was to write scripts
+              to automate my data processing and visualisation using Python, which
+              was key to my research progression. After finishing my PhD I made it a
+              priority of mine to dive into software engineering head-first and I have uncovered a true passion for building products. I since have completed numerous courses in HTML/CSS, Javascript, NodeJS and ReactJS and have built projects using various technologies which
+              you can find in my skills section.
             </p>
           </div>
         </div>
@@ -156,7 +186,7 @@
             </div>
             <div class="education-content">
               <div class="education-tag">
-                <span class="tag tag--phd">PhD (Minor Corrections)</span>
+                <span class="tag tag--phd">PhD</span>
               </div>
               <p class="education-title">Doctor of Philosophy (Chemistry)</p>
               <ul class="education-attributes">
@@ -281,24 +311,18 @@
 
       <section class="section-skills">
         <h1 class="heading-primary">Skills</h1>
-        <div class="container grid grid--6-cols grid--2-rows grid--center-v">
+        <div class="container grid grid--5-cols grid--2-rows grid--center-v">
           <div class="skill">
-            <!-- <ion-icon name="logo-html5" class="skill-icon"></ion-icon> -->
-
-            <!-- <ion-icon name="logo-css3" class="skill-icon"></ion-icon> -->
 
             <img
-              src="/img/skills/html.svg"
+              src="/img/skills/html-2.svg"
               alt="html img icon"
               class="img-icon html-icon"
             />
             <p class="skill-title">HTML/CSS</p>
-            <p class="skill-text">Flexbox, grid, responsive web design,</p>
           </div>
 
           <div class="skill">
-            <!-- <ion-icon name="logo-javascript" class="skill-icon"></ion-icon> -->
-
             <img
               src="/img/skills/javascript.svg"
               alt="js img icon"
@@ -306,73 +330,88 @@
             />
 
             <p class="skill-title">JavaScript</p>
-            <p class="skill-text">
-              DOM manipulation, data structures, events, object-oriented
-              programming, ES6+, asynchronous JS, git
-            </p>
+
           </div>
 
           <div class="skill">
-            <!-- <ion-icon name="logo-nodejs" class="skill-icon"></ion-icon> -->
 
             <img
-              src="/img/skills/node_2.svg"
+              src="/img/skills/nodejs-icon (1).svg"
               alt="node img icon"
               class="img-icon node-icon"
             />
             <p class="skill-title">NodeJS</p>
-            <p class="skill-text">
-              Asynchronous JS, ejs, event loop, express, RESTful APIs,
-              authentication,
-            </p>
+
           </div>
 
           <div class="skill">
             <img
-              src="/img/skills/mongo.svg"
+              src="/img/skills/mongodb-icon.svg"
               class="skill-icon img-icon"
               alt="mongodb"
             />
             <p class="skill-title">MongoDB</p>
-            <p class="skill-text">
-              CRUD operations, mongoose,middleware, aggregation
-            </p>
+
           </div>
 
           <div class="skill">
             <img
-              src="/img/skills/react.svg"
+              src="/img/skills/express.svg"
+              class="skill-icon img-icon"
+              alt="express"
+            />
+            <p class="skill-title">Express</p>
+   
+          </div>
+
+          <div class="skill">
+            <img
+              src="/img/skills/reactjs-icon.svg"
               class="skill-icon img-icon react-icon"
               alt="react"
             />
             <p class="skill-title">ReactJS</p>
-            <p class="skill-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+
           </div>
 
           <div class="skill">
-            <!-- <ion-icon name="logo-Python" class="skill-icon"></ion-icon> -->
+            <img
+              src="/img/skills/tailwind.svg"
+              class="skill-icon img-icon tailwind-icon"
+              alt="tailwind"
+            />
+            <p class="skill-title">Tailwind CSS</p>
+
+          </div>
+
+          <div class="skill">
             <img
               src="/img/skills/python.svg"
               class="skill-icon img-icon python-icon"
               alt="python"
             />
             <p class="skill-title">Python</p>
-            <p class="skill-text">Matplotlib, numpy, scipy</p>
+
           </div>
 
           <div class="skill">
-            <ion-icon name="book" class="skill-icon"></ion-icon>
-            <p class="skill-title">Academia</p>
-            <p class="skill-text">
-              Electrocatalysis, photocatalysis, biocatalysis, assays,
-              sustainability, solar fuels, material design & synthesis, project
-              formulation, literature review/search, project management,
-              leadership, independence, creative thinking.
-            </p>
+            <img
+              src="/img/skills/github.svg"
+              class="skill-icon img-icon github-icon"
+              alt="guthub"
+            />
+            <p class="skill-title">GitHub</p>
           </div>
-        </div>
+
+          <div class="skill">
+            <img
+              src="/img/skills/netlify-icon.svg"
+              class="skill-icon img-icon netlify-icon"
+              alt="netlify"
+            />
+            <p class="skill-title">Netlify</p>
+          </div>
+
       </section>
 
       <section class="section-projects">
@@ -385,41 +424,116 @@
 
             <div class="hidden-box">
               <p class="project-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium eveniet perspiciatis tenetur animi mollitia impedit,
-                enim nam nisi quibusdam inventore, ipsum, earum explicabo
-                voluptatum quod rem libero placeat qui excepturi.
+                This portfolio site was created from scratch using HTML, CSS and Vanilla JavaScript. 
               </p>
+              <div class="project-icon-container">
+                <div class="send-left">
+                  <a href="https://vivek-badiani.netlify.app/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 project-icons link-icon">
+                      <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                  <a href="https://github.com/viv-bad/portfolio-site" target="_blank">
+                    
+                    <img src="/img/skills/github.svg" alt="github-icon" class="project-icons send-right"/>
+                  </a>
+                </div>
+                  
+                <img src="/img/skills/html-2.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/css.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/javascript.svg" alt="github-icon" class="project-icons"/>       
+
+                  
+              </div>
             </div>
+            
           </div>
 
           <div class="item">
             <p class="number">02</p>
-            <p class="text">Bookstore</p>
+            <p class="text">Book Identifier App</p>
             <ion-icon name="arrow-down" class="accordian-icon"></ion-icon>
 
             <div class="hidden-box">
               <p class="project-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium eveniet perspiciatis tenetur animi mollitia impedit,
-                enim nam nisi quibusdam inventore, ipsum, earum explicabo
-                voluptatum quod rem libero placeat qui excepturi.
+                As many people do, we own hundreds of books in our apartment. Furthermore, we have many visitors who come to view our bookshelf and want to borrow a book. Therefore, the Book Identifier App was created using JavaScript, NodeJs, Express, MongoDB and Mongoose with an EJS template view engine. This project utilised the MVC architecture along with the OpenLibrary API to identify a given book simply by the ISBN (book-id) number. By entering the ISBN number, an API call is made to the OpenLibrary API where the metadata of the book is retrieved, stored in the database, and displayed on the app. 
+                This app has solved the problem of knowing which books we currently have in our apartment, and which we have lent to others. 
               </p>
+              <div class="project-icon-container">
+                <div class="send-left">
+                  <a href="https://book-identifier.netlify.app/" target="_blank">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 project-icons link-icon">
+                      <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                    <a href="https://github.com/viv-bad/bookstore" target="_blank">
+                    
+                    <img src="/img/skills/github.svg" alt="github-icon" class="project-icons send-right"/>
+                  </a>
+                </div>
+                  
+                <img src="/img/skills/css.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/javascript.svg" alt="github-icon" class="project-icons"/>       
+                <img src="/img/skills/nodejs-icon (1).svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/mongodb-icon.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/express.svg" alt="github-icon" class="project-icons"/>
+
+                  
+              </div>
+
             </div>
           </div>
 
           <div class="item">
             <p class="number">03</p>
-            <p class="text">Electrochemical experiment organiser</p>
+            <p class="text">Arquimedes' List</p>
             <ion-icon name="arrow-down" class="accordian-icon"></ion-icon>
 
             <div class="hidden-box">
               <p class="project-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium eveniet perspiciatis tenetur animi mollitia impedit,
-                enim nam nisi quibusdam inventore, ipsum, earum explicabo
-                voluptatum quod rem libero placeat qui excepturi.
+                Allocating tasks and chores within a household is always ridden with miscommunication and stress. Arquimedes' List is a task app, where users can create tasks, assign them to a user, and mark them as completed when done. This fullstack app was created using the MongoDB, Express, React and NodeJS (MERN) stack, with the data persisting on a hosted server, communicating with the client through the REST endpoints. 
+                This app has made our household much more efficient at delegating and completing tasks. 
               </p>
+              <div class="project-icon-container">
+                <div class="send-left">
+<a href="https://arquimedes-list.netlify.app/" target="_blank">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 project-icons link-icon">
+    <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z" clip-rule="evenodd" />
+  </svg>
+</a>
+  <div class="github-link-icon">
+    
+                    <a href="https://github.com/viv-bad/arquimedes-list-server" target="_blank">
+                      
+                      <img src="/img/skills/github.svg" alt="github-icon" class="project-icons send-right"/>
+                      <p class="hover-text">Server</p>
+                    </a>
+                  </div>
+                    
+
+
+                  <div class="github-link-icon">
+
+                    <a href="https://github.com/viv-bad/arquimedes-list-client" target="_blank">
+                      
+                      <img src="/img/skills/github.svg" alt="github-icon" class="project-icons send-right"/>
+                      <p class="hover-text"> Client</p>
+                    </a>
+                  </div>
+                </div>
+                  
+                <img src="/img/skills/html-2.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/css.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/javascript.svg" alt="github-icon" class="project-icons"/>       
+                <img src="/img/skills/nodejs-icon (1).svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/mongodb-icon.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/express.svg" alt="github-icon" class="project-icons"/>
+                <img src="/img/skills/reactjs-icon.svg" alt="github-icon" class="project-icons"/>
+                
+                  
+              </div>
             </div>
           </div>
         </div>
@@ -429,7 +543,7 @@
         <h1 class="heading-primary">Published articles</h1>
         <div class="container paper-carousel">
           <div class="paper paper-1">
-            <a href="https://pubs.acs.org/doi/10.1021/jacs.2c04529">
+            <a href="https://pubs.acs.org/doi/10.1021/jacs.2c04529" target="_blank">
               <img
                 src="/img/papers/JACS.png"
                 class="paper-img"
@@ -444,7 +558,7 @@
           </div>
 
           <div class="paper paper-2">
-            <a href="https://www.nature.com/articles/s41557-021-00880-2">
+            <a href="https://www.nature.com/articles/s41557-021-00880-2" target="_blank">
               <img
                 src="/img/papers/Nature_Chem_2.png"
                 class="paper-img"
@@ -458,7 +572,7 @@
           </div>
 
           <div class="paper paper-3">
-            <a href="https://pubs.acs.org/doi/full/10.1021/acscatal.1c04317">
+            <a href="https://pubs.acs.org/doi/full/10.1021/acscatal.1c04317" target="_blank">
               <img
                 src="/img/papers/ACS_Cat_1.png"
                 class="paper-img"
@@ -474,7 +588,7 @@
 
           <div class="paper paper-4">
             <a
-              href="https://pubs.rsc.org/en/content/articlehtml/2022/sc/d2sc00890d"
+              href="https://pubs.rsc.org/en/content/articlehtml/2022/sc/d2sc00890d" target="_blank"
             >
               <img
                 src="/img/papers/Chem_Sci.png"
@@ -489,7 +603,7 @@
           </div>
 
           <div class="paper paper-5">
-            <a href="https://pubs.acs.org/doi/full/10.1021/acscatal.2c02689">
+            <a href="https://pubs.acs.org/doi/full/10.1021/acscatal.2c02689" target="_blank">
               <img
                 src="/img/papers/ACS_Cat_2.png"
                 class="paper-img"
@@ -504,7 +618,7 @@
 
           <div class="paper paper-6">
             <a
-              href="https://pubs.rsc.org/en/content/articlehtml/2019/fd/c9fd90026h"
+              href="https://pubs.rsc.org/en/content/articlehtml/2019/fd/c9fd90026h" target="_blank"
             >
               <img
                 src="/img/papers/Faraday_2.png"
@@ -520,7 +634,7 @@
 
           <div class="paper paper-7">
             <a
-              href="https://pubs.rsc.org/en/content/articlelanding/2019/fd/c9fd90024a/unauth"
+              href="https://pubs.rsc.org/en/content/articlelanding/2019/fd/c9fd90024a/unauth" target="_blank"
             >
               <img
                 src="/img/papers/Faraday_1.png"
@@ -551,6 +665,25 @@
           </div>
         </div>
       </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact-me">
+            <h1 class="heading-primary">Contact me</h1>
+            <p class="contact-description">
+              If you want to get in touch with me, or just say hi
+              <a href="mailto: vivekbadiani@gmail.com">
+                <button class="contact-btn">Click here!</button></a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="section-footer">
+      <div class="footer">
+        <p class="footer-text">Designed & built by Vivek Badiani &copy; 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
